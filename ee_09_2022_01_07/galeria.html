@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+</head>
+<body>
+    <div id="baner">
+        <h2>Galeria miejsc ciekawych</h2>
+    </div>
+    <div id="glowny">
+        <img src="lanzarotte.jpg" alt="galeria" id="zdjecie">
+    </div>
+    <div id="lewy">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte" id="z1" onclick="f1(document.getElementById('z1').alt)">
+        <img src="pekin.jpg" alt="pekin" id="z2" onclick="f1(document.getElementById('z2').alt)">
+        <img src="serengeti.jpg" alt="serengeti" id="z3" onclick="f1(document.getElementById('z3').alt)">
+        <img src="wenecja.jpg" alt="wenecja" id="z4" onclick="f1(document.getElementById('z4').alt)">
+        <img src="tajlandia.jpg" alt="tajlandia" id="z5" onclick="f1(document.getElementById('z5').alt)">
+    </div>
+    <div id="prawy">
+        <h3>Obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>
+            Polub nas <img src="icon-off.png" id="icon" alt="off" onclick="f2()">
+        </p>
+        <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+    </div>
+    <div id="stopka">
+        Autor: PESEL
+    </div>
+    <script>
+        function f1(foto){
+            if (foto == 'lanzarotte')
+                document.getElementById('zdjecie').src = 'lanzarotte.jpg'
+            if (foto == 'pekin')
+                document.getElementById('zdjecie').src = 'pekin.jpg'
+            if (foto == 'serengeti')
+                document.getElementById('zdjecie').src = 'serengeti.jpg'
+            if (foto == 'wenecja')
+                document.getElementById('zdjecie').src = 'wenecja.jpg'
+            if (foto == 'tajlandia')
+                document.getElementById('zdjecie').src = 'tajlandia.jpg'
+        }
+        function f2(){
+            x = document.getElementById("icon").alt
+            if (x == 'off'){
+                document.getElementById('icon').alt = 'on'
+                document.getElementById('icon').src = 'icon-on.png'
+            }else{
+                document.getElementById('icon').alt = 'off'
+                document.getElementById('icon').src = 'icon-off.png'
+            }
+                
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+1. INSERT INTO ratownicy  VALUES (NULL, '20', 'Adam Nowak', 'Jan Kowalski', 'Anna Nowakowska'); 
+2. SELECT `id`, `ratownicy_id`, `adres` FROM `zgloszenia` WHERE `dyspozytorzy_id` = 4 
+3. CREATE USER 'adam'@'localhost' IDENTIFIED VIA mysql_native_password USING 'Adam6&';
+4. GRANT CREATE, DROP, ALTER ON `ee09`.ratownicy TO 'adam'@'localhost'; 

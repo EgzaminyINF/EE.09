@@ -1,0 +1,43 @@
+*{
+    font-family: Georgia;
+}
+#lewy{
+    background: maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+    float: left;
+}
+#prawy{
+    background: maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+    float: left;
+}
+#stopka{
+    background: dimgray;
+    color: white;
+    clear: both;
+}
+#prawy ul, #prawy img{
+    float: left;
+}
+p{
+    padding: 10px;
+    clear: both;
+}
+img{
+    padding: 10px;
+    border: 1px solid white;
+}
+.b1{
+    background: indigo;
+}
+.b2{
+    background: steelblue;
+}
+.b3{
+    background: olive;
+}

@@ -1,0 +1,35 @@
+*{
+    font-family: Arial;
+}
+#blewy, #slewa, #bsrodkowy, #ssrodkowa, #bprawy, #sprawa{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+    float: left;
+}
+#blewy, #slewa{
+    width: 55%;
+    font-size: 120%;
+}
+#bsrodkowy, #ssrodkowa{
+    width: 25%;
+}
+#bprawy, #sprawa{
+    width: 20%;
+    text-align: right;
+}
+#glowny{
+    background: snow;
+    padding: 70px;
+    clear: both;
+}
+a{
+    border: 2px dotted saddlebrown;
+    background: snow;
+    color: saddlebrown;
+    padding: 20px;
+    line-height: 100px;
+}
+ol{
+    list-style-type: lower-alpha;
+}

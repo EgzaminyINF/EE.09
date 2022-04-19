@@ -1,0 +1,34 @@
+*{
+    font-family: Georgia;
+}
+#baner{
+    background: dodgerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#glowny{
+    background: lightblue;
+    padding: 100px;
+}
+#lewy{
+    background: dodgerblue;
+    color: white;
+    width: 20%;
+    height: 220px;
+    float: left;
+}
+#srodkowy, #prawy{
+    background: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 220px;
+    text-align: center;
+    float: left
+}
+a{
+    border: 1px dashed dimgray;
+    background: gold;
+    color: darkred;
+    padding: 10px;
+}

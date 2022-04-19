@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css">
+</head>
+<body>
+    <div id="lewy">
+        <h1>Konfigurator stylu</h1>
+        <p>Podaj kolor tła <br>
+            <input type="button" value="Indigo" id="indigo" class="b1" onclick="f1()">
+            <input type="button" value="SteelBlue" id="SteelBlue"  class="b2" onclick="f2()">
+            <input type="button" value="Olive" id="Olive" class="b3" onclick="f3()">
+        </p>
+        <p>
+            Podaj kolor czcionki<br>
+            <select id="kolorcz" onchange="f4()">
+                <option>White</option>
+                <option>Tan</option>
+                <option>Bisque</option>
+                <option>Plum</option>
+            </select>
+        </p>
+        <p>
+            Podaj rozmiar czcionki w procentach, np. 200%<br>
+            <input type="text" id="rozmiarcz" onchange="f5()" value="100%">
+        </p>
+        <p>
+            Czy rysunek ma mieć ramkę? <br>
+            <input type="checkbox" id="ramka" onclick="f6()" checked> Rysuj ramkę
+        </p>
+        <p>
+            Jaki typ punktora listy? <br>
+            <input type="radio" name="lista" id="a1" onclick="f7()"> dysk <br>
+            <input type="radio" name="lista" id="a2" onclick="f7()"> kwadrat <br>
+            <input type="radio" name="lista" id="a3" onclick="f7()"> okrąg <br>
+        </p>
+    </div>
+    <div id="prawy">
+        <img src="gibraltar.jpg" id="foto" alt="półwysep Gibraltar">
+        <ul id="punkty">
+            <li>element 1</li>
+            <li>element 2</li>
+            <li>element 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    <div id="stopka">
+        Autor: PESEL
+    </div>
+    <script>
+        function f1(){
+            kolortla = document.getElementById("indigo").value
+            document.getElementById("prawy").style.background = kolortla
+        }
+        function f2(){
+            kolortla = document.getElementById("SteelBlue").value
+            document.getElementById("prawy").style.background = kolortla
+        }
+        function f3(){
+            kolortla = document.getElementById("Olive").value
+            document.getElementById("prawy").style.background = kolortla
+        }
+        function f4(){
+            kolorcz = document.getElementById("kolorcz").value
+            document.getElementById("prawy").style.color = kolorcz
+        }
+        function f5(){
+            rozmiarcz = document.getElementById("rozmiarcz").value
+            document.getElementById("prawy").style.fontSize = rozmiarcz
+        }
+        function f6(){
+            ramka = document.getElementById("ramka").checked
+            if (ramka == true)
+                document.getElementById("foto").style.border = "1px solid white"
+            else    
+                document.getElementById("foto").style.border = "none"
+        }
+        function f6(){
+            ramka = document.getElementById("ramka").checked
+            if (ramka == true)
+                document.getElementById("foto").style.border = "1px solid white"
+            else    
+                document.getElementById("foto").style.border = "none"
+        }
+        function f7(){
+            a1=document.getElementById("a1").checked
+            a2=document.getElementById("a2").checked
+            a3=document.getElementById("a3").checked
+            if (a1 == true)
+                document.getElementById("punkty").style.listStyleType = "disc"
+            if (a2 == true)
+                document.getElementById("punkty").style.listStyleType = "square"
+            if (a3 == true)
+                document.getElementById("punkty").style.listStyleType = "circle"
+        }
+    </script>
+</body>
+</html>

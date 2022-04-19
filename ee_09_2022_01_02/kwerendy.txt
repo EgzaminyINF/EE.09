@@ -1,0 +1,4 @@
+1. SELECT * FROM `pogoda` WHERE `miasta_id` = 1 ORDER BY `data_prognozy` ASC 
+2. SELECT `id`, `data_prognozy` FROM `pogoda` WHERE `opady` > 30 
+3. SELECT pogoda.data_prognozy, pogoda.temperatura_noc, miasta.nazwa FROM pogoda, miasta WHERE miasta.id=pogoda.miasta_id AND pogoda.temperatura_noc < 6
+4. ALTER TABLE `miasta` ADD `wojewodztwo` TEXT NULL; 

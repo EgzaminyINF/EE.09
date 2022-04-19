@@ -1,0 +1,9 @@
+1. CREATE TABLE `psy`.`uzytkownicy` ( 
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT , 
+    `login` VARCHAR(50) NOT NULL , 
+    `haslo` VARCHAR(50) NOT NULL , 
+    PRIMARY KEY (`id`)
+); 
+2. INSERT INTO `uzytkownicy` (`id`, `login`, `haslo`) VALUES (NULL, 'Grzegorz', 'g'); 
+3. SELECT `login` FROM `uzytkownicy` 
+4. SELECT `id`, `login` FROM `uzytkownicy` WHERE `haslo` LIKE '4%' 
