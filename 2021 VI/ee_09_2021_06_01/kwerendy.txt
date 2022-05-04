@@ -1,0 +1,9 @@
+1. SELECT `imie`, `nazwisko`, `opis`, `zdjecie` FROM `osoby` WHERE `Hobby_id` IN (1,2,6) 
+2. SELECT osoby.id, osoby.nazwisko, hobby.nazwa FROM osoby, hobby WHERE osoby.Hobby_id=Hobby.id AND osoby.rok_urodzenia>2000
+3. SELECT `id`, `zdjecie` FROM `osoby` WHERE `imie` LIKE 'Monika' 
+4. CREATE TABLE `dane`.`wpisy` ( 
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT , 
+    `wpis` TEXT NOT NULL , 
+    `uzytkownik_id` INT UNSIGNED NOT NULL , 
+    PRIMARY KEY (`id`)
+) ; 
